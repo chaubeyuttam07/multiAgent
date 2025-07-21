@@ -22,12 +22,14 @@ This project implements an agent-based Retrieval-Augmented Generation (RAG) chat
    git clone  https://github.com/chaubeyuttam07/multiAgent.git
    cd multiAgent
    ```
+2. **Setup the Environment variable:**
 
    ```bash
    python -m venv myenv
    source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
     pip install -r requirements.txt
    ```
+3. **Run the Project:**
 
    ```bash
    python src/ui/app.py
