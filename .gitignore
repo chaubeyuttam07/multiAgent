@@ -7,3 +7,6 @@
 # Ignore a folder and its contents
 myenv/
 .streamlit/secrets.toml".steamlit/secrets.toml" 
+# Secrets (do not push to GitHub)
+**/.streamlit/secrets.toml
+
