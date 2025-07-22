@@ -1,0 +1,10 @@
+langchain
+langgraph
+streamlit
+transformers
+faiss-cpu  # or faiss-gpu if using a GPU
+pandas
+PyPDF2
+python-pptx
+python-docx
+flask 

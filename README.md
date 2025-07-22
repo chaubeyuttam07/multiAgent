@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements an agent-based Retrieval-Augmented Generation (RAG) chatbot designed to answer questions using documents in various formats. The architecture incorporates a Model Context Protocol (MCP) for communication between agents.
+This project implements an agent-based Retrieval-Augmented Generation (RAG) chatbot that answers questions using documents of various formats. It utilizes Langchain for building language model applications, LangGraph for orchestrating language model interactions, and Streamlit for the UI.
 
 ## Features
 
@@ -10,9 +10,8 @@ This project implements an agent-based Retrieval-Augmented Generation (RAG) chat
 - **Agentic Architecture:**
   - **IngestionAgent:** Parses and preprocesses documents.
   - **RetrievalAgent:** Handles embeddings and semantic retrieval.
-  - **LLMResponseAgent:** Forms queries and generates answers using LLMs.
-- **User Interface:** Allows document uploads, multi-turn questions, and response display with source context.
-- **Scalable and Modular Design**
+  - **LLMResponseAgent:** Forms queries using retrieved context and generates answers.
+- **User Interface:** Built with Streamlit for seamless interaction and visualization.
 
 ## Installation
 
@@ -32,13 +31,9 @@ This project implements an agent-based Retrieval-Augmented Generation (RAG) chat
 3. **Run the Project:**
 
    ```bash
-   python src/ui/app.py
+    streamlit run src/ui/app.py
    ```
 
-### Instructions
 
-- Replace `<your-repo-URL>` with your actual GitHub repository URL.
-- Update any placeholder text such as email addresses.
-- Customize sections as needed to suit your specific project nuances.
 
-Let me know if you need any further customization!
+
