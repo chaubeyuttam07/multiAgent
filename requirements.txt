@@ -1,10 +1,13 @@
-langchain
-langgraph
 streamlit
+langchain
 transformers
-faiss-cpu  # or faiss-gpu if using a GPU
-pandas
-PyPDF2
-python-pptx
+sentence-transformers
+faiss-cpu
+unstructured
+pypdf
 python-docx
-flask 
+python-pptx
+pandas
+dotenv
+langchain-groq
+
