@@ -1,21 +1,18 @@
 # backend/agents/llm_response_agent.py
 
-import os
-from dotenv import load_dotenv
+import streamlit as st
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_community.vectorstores import FAISS
-
 from langchain_groq import ChatGroq
 
-load_dotenv()
 
 class LLMResponseAgent:
     def __init__(self, retriever):
         self.retriever = retriever
         self.llm = ChatGroq(
-            groq_api_key=os.getenv("GROQ_API_KEY"),
-            model=os.getenv("GROQ_MODEL", "llama3-70b-8192")
+            groq_api_key=st.secrets["GROQ_API_KEY"],
+            model=st.secrets.get("GROQ_MODEL", "llama3-70b-8192")
         )
 
         prompt_template = """Use the following context to answer the question:
@@ -23,7 +20,7 @@ class LLMResponseAgent:
 
         Question: {question}
         Answer:"""
-        
+
         prompt = PromptTemplate.from_template(prompt_template)
 
         self.qa_chain = RetrievalQA.from_chain_type(
@@ -34,4 +31,3 @@ class LLMResponseAgent:
 
     def generate(self, query):
         return self.qa_chain.invoke(query)
-
