@@ -1,6 +1,5 @@
 transformers
 sentence-transformers
-faiss-cpu
 unstructured
 pypdf
 python-docx
@@ -17,4 +16,5 @@ langchain-groq
 groq
 pymupdf
 python-dotenv
+faiss-cpu
 
