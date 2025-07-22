@@ -1,7 +1,11 @@
-from langchain.document_loaders import (
-    PyPDFLoader, UnstructuredWordDocumentLoader,
-    UnstructuredPowerPointLoader, CSVLoader, TextLoader
+from langchain_community.document_loaders import (
+    PyPDFLoader,
+    UnstructuredWordDocumentLoader,
+    UnstructuredPowerPointLoader,
+    CSVLoader,
+    TextLoader,
 )
+
 import os
 
 class IngestionAgent:
