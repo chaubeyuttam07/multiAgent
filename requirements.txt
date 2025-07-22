@@ -1,5 +1,3 @@
-streamlit
-langchain
 transformers
 sentence-transformers
 faiss-cpu
@@ -9,7 +7,14 @@ python-docx
 python-pptx
 pandas
 dotenv
-langchain-groq
-langchain-community
 langchain-core
 pymupdf
+streamlit
+langchain
+langchain-community
+langchain-huggingface
+langchain-groq
+groq
+pymupdf
+python-dotenv
+
