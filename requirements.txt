@@ -12,3 +12,4 @@ dotenv
 langchain-groq
 langchain-community
 langchain-core
+pymupdf
